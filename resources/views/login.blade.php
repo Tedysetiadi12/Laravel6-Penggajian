@@ -34,7 +34,12 @@
 					<span class="login100-form-title">
 						Selamat Datang
 					</span>
-
+					@if(session('error'))
+					<div class="alert alert-danger">
+					  {{ session('error') }}
+					</div>
+					@endif
+					@include('sweetalert::alert')
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
 						<input class="input100" type="text" name="email" placeholder="Email">
 						<span class="focus-input100"></span>

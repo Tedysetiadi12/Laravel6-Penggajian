@@ -26,5 +26,18 @@ class pageController extends Controller
         $penggajians = Penggajian::with(['pegawai', 'jabatan'])->get();
         return view('penggajian',['data' => $data, 'penggajians' => $penggajians]);
     }
+    public function tamu(){
+        return view('pengunjung');
+    }
+    public function cari(Request $request)
+    {
+        $keyword = $request->input('keyword');
+
+        if(empty($keyword)){
+            return view('pengunjung');
+        }
+        $pegawai = Pegawai::where('nama', 'like', '%' . $keyword . '%')->get();
+        return view('pengunjung', ['pegawai' => $pegawai]);
+    }
     
 }

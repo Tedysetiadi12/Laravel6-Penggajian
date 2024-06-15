@@ -12,8 +12,10 @@
 */
 
 // Public routes
-Route::middleware('guest')->group(function () {
-Route::get('/', 'AuthController@login')->name('login');
+Route::middleware('web')->group(function () {
+Route::get('/login', 'AuthController@login')->name('login');
+Route::get('/', 'pageController@tamu');
+Route::get('/cari', 'pageController@cari');
 Route::post('/ceklogin', 'AuthController@Ceklogin');
 Route::get('register', 'AuthController@showRegisterForm')->name('register');
 Route::post('register', 'AuthController@register');
