@@ -6,7 +6,10 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
-
+<h1> Tugas akhir semester </h1>
+<h2>Nama : Tedi setiadi</h2>
+<h2>NPM : 3223111018</h2>
+<h2>Prody : D3 Sistem Infomasi</h2>
 Tugas Untuk memenuhi Tugas akhir semester dengan membuat sebuah project 
 ## About Laravel
 
